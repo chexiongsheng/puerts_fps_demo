@@ -23,7 +23,9 @@
 
 ![](pic/3.png)
 
-* BlockBreakerStarter下新建TypeScript目录，新建tsconfig.json，在tsconfig.json输入如下内容。
+* BlockBreakerStarter下新建TypeScript目录
+
+* BlockBreakerStarter下新建tsconfig.json，在tsconfig.json输入如下内容。
 
 ```json
 {
@@ -33,7 +35,7 @@
     "jsx": "react",
     "sourceMap": true,
     "typeRoots": [
-      "Content/Typing",
+      "Plugins/Puerts/Typing",
       "./node_modules/@types"
     ],
     "outDir": "Content/JavaScript"
