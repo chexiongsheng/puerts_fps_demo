@@ -10,7 +10,7 @@
 
 ### TypeScript编程环境搭建
 
-* 下载（或clone）(puerts)[https://github.com/Tencent/puerts]；
+* 下载（或clone）[puerts](https://github.com/Tencent/puerts)；
 * 拷贝unreal/Puerts目录到到BlockBreakerStarter/Plugins目录下；
 * 命令行进入BlockBreakerStarter/Plugins/Puerts，执行如下命令
 ~~~
