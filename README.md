@@ -10,41 +10,17 @@
 
 ### TypeScript编程环境搭建
 
-目前步骤略显复杂，所幸一个项目只需做一次，而且后续会通过在UE商城上架组件来简化。
-
-* 下载（或clone）puerts的unreal demo（假设放puerts\_unreal\_demo目录），右键选择puerts\_unreal\_demo.uproject生成vs工程，然后打开vs工程编译；
-* 拷贝puerts\_unreal\_demo\\Plugins到BlockBreakerStarter，拷贝puerts\_unreal\_demo\\Plugins\\Puerts\\Content下的内容到BlockBreakerStarter\\Content
-* 命令行进入BlockBreakerStarter\\Content\\JavaScript\\PuertsEditor，执行命令\`npm install .\`
-* 双击**BlockBreaker.uproject**打开项目，菜单上选择“编辑->项目设置”，打开设置页面后在“插件->Puerts Setting”中把“Puerts Module Enable”勾选上
-
-![](pic/2.png)
-
-* 点击puerts的生成按钮，这步骤会生成UE API的TypeScript声明
+* 下载（或clone）(puerts)[https://github.com/Tencent/puerts]；
+* 拷贝unreal/Puerts目录到到BlockBreakerStarter/Plugins目录下；
+* 命令行进入BlockBreakerStarter/Plugins/Puerts，执行如下命令
+~~~
+node enable_puerts_module.js
+~~~
+* 双击**BlockBreaker.uproject**打开项目，点击puerts的生成按钮，这步骤会生成UE API的TypeScript声明
 
 ![](pic/3.png)
 
-* BlockBreakerStarter下新建TypeScript目录
 
-* BlockBreakerStarter下新建tsconfig.json，在tsconfig.json输入如下内容。
-
-```json
-{
-  "compilerOptions": {
-    "target": "esnext",
-    "module": "commonjs",
-    "jsx": "react",
-    "sourceMap": true,
-    "typeRoots": [
-      "Plugins/Puerts/Typing",
-      "./node_modules/@types"
-    ],
-    "outDir": "Content/JavaScript"
-  },
-  "include": [
-    "TypeScript/**/*"
-  ],
-}
-```
 * 重启UE4编辑器
 
 ### 创建玩家角色
