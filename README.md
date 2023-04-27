@@ -1,5 +1,7 @@
 这篇文章[《制作简单FPS游戏》](https://www.cnblogs.com/leoin2012/p/11713524.html)介绍了如何在UE下用蓝图制作一个简单的FPS游戏，本文按其步骤，用TypeScript实现了一遍，熟悉蓝图的同学可以通过两边对照，找到蓝图怎么换成TypeScript的感觉；不熟悉蓝图的同学也可以直接看本文。
 
+新版puerts做了改动，组件声明了就会自动添加到Actor，不需在构造函数里头CreateDefaultSubobject了，按最新搞了个现成的工程，这篇文章里的内容就不逐个修改了：[BlockBreakerStarter](https://github.com/chexiongsheng/BlockBreakerStarter)
+
 ### 起步入门
 
 下载[示例项目](https://koenig-media.raywenderlich.com/uploads/2018/01/BlockBreakerStarter.zip)并解压。进入项目文件夹（BlockBreakerStarter），双击**BlockBreaker.uproject**打开项目，我们能看到以下场景：
